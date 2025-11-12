@@ -74,7 +74,7 @@ netchat/
 
 ```bash
 git clone <your-repo-url>
-cd netchat
+cd Hetchat
 ```
 
 ### 2. Firebase Setup
