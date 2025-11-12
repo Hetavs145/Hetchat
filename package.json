@@ -1,0 +1,28 @@
+{
+  "name": "hetchat",
+  "version": "1.0.0",
+  "description": "Real-time messaging application with React, Node.js, Firebase, and Socket.io",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start:server": "cd server && npm start",
+    "preview": "cd client && npm run preview"
+  },
+  "keywords": [
+    "chat",
+    "real-time",
+    "socketio",
+    "firebase",
+    "react",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
