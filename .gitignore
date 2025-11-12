@@ -47,9 +47,14 @@ serviceAccountKey.json
 .cache/
 coverage/
 *.local
- 
+
 # Project docs excluded from push
 RUN_COMMANDS.md
 *.txt
 *.pdf
+
+# Encrypted files/secrets
+*.enc
+enc/
+.env.enc
 
