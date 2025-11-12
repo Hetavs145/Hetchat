@@ -4,8 +4,10 @@ node_modules/
 
 # Environment variables
 .env
-.env.*
-!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Build outputs
 dist/
@@ -45,14 +47,9 @@ serviceAccountKey.json
 .cache/
 coverage/
 *.local
-
+ 
 # Project docs excluded from push
 RUN_COMMANDS.md
 *.txt
 *.pdf
-
-# Encrypted files/secrets
-*.enc
-enc/
-.env.enc
 

@@ -2,7 +2,7 @@
 
 A modern, full-stack real-time chat application built with React, Node.js, Firebase, and Socket.io. Features beautiful UI with light/dark mode, real-time messaging, typing indicators, and user presence tracking.
 
-![NetChat Banner](https://img.shields.io/badge/NetChat-Real--time%20Messaging-blue)
+![HetChat Banner](https://img.shields.io/badge/NetChat-Real--time%20Messaging-blue)
 ![React](https://img.shields.io/badge/React-18.2-61dafb)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-green)
 ![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-orange)
@@ -70,7 +70,12 @@ netchat/
 - Firebase account
 - Git
 
-<!-- Clone instructions removed per request -->
+### 1. Clone the Repository
+
+```bash
+git clone <your-repo-url>
+cd netchat
+```
 
 ### 2. Firebase Setup
 
@@ -106,34 +111,31 @@ npm install
 
 ### 4. Environment Configuration
 
-#### Client `.env`
-Copy `client/.env.example` to `client/.env` and set these variables (use your own values):
+#### Client `.env` (or use the provided one)
+Create `client/.env`:
 ```env
-VITE_FIREBASE_API_KEY=
-VITE_FIREBASE_AUTH_DOMAIN=
-VITE_FIREBASE_PROJECT_ID=
-VITE_FIREBASE_STORAGE_BUCKET=
-VITE_FIREBASE_MESSAGING_SENDER_ID=
-VITE_FIREBASE_APP_ID=
-VITE_FIREBASE_MEASUREMENT_ID=
-VITE_SOCKET_URL=
+VITE_FIREBASE_API_KEY=AIzaSyDSBCIVqMTqU8o4xCsTyVaMbpsnevpzVlg
+VITE_FIREBASE_AUTH_DOMAIN=hetchat-bc3ea.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=hetchat-bc3ea
+VITE_FIREBASE_STORAGE_BUCKET=hetchat-bc3ea.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=371455166331
+VITE_FIREBASE_APP_ID=1:371455166331:web:5da5e1d62954a679f55fde
+VITE_FIREBASE_MEASUREMENT_ID=G-V6C64K2MJF
+VITE_SOCKET_URL=http://localhost:5000
 ```
 
 #### Server `.env`
-Copy `server/.env.example` to `server/.env` and set these variables:
+Create `server/.env`:
 ```env
-PORT=
-NODE_ENV=
-FIREBASE_PROJECT_ID=
-FIREBASE_CLIENT_EMAIL=
-FIREBASE_PRIVATE_KEY=
-CLIENT_URL=
+PORT=5000
+NODE_ENV=development
+FIREBASE_PROJECT_ID=hetchat-bc3ea
+FIREBASE_CLIENT_EMAIL=your-service-account-email@project-id.iam.gserviceaccount.com
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYour private key\n-----END PRIVATE KEY-----\n"
+CLIENT_URL=http://localhost:3000
 ```
 
-**Important**
-- Do not paste actual keys into this README.
-- Keep `.env` files private; they are excluded via `.gitignore` (all `.env*` except `.env.example`).
-- Use the example env files as templates and map service account credentials from the downloaded JSON file.
+**Important**: Get the service account credentials from the JSON file you downloaded.
 
 ### 5. Deploy Firestore Rules
 
@@ -175,7 +177,7 @@ npm run dev
 4. Open another browser window (incognito mode) and sign in with a different account
 5. Join the same room and start chatting!
 
-## 🌐 Deployment
+<!-- ## 🌐 Deployment
 
 ### Frontend - Firebase Hosting
 
@@ -333,4 +335,4 @@ You should see:
 - ✅ Light/dark mode toggle
 
 
-
+ -->
