@@ -2,7 +2,7 @@
 
 A modern, full-stack real-time chat application built with React, Node.js, Firebase, and Socket.io. Features beautiful UI with light/dark mode, real-time messaging, typing indicators, and user presence tracking.
 
-![NetChat Banner](https://img.shields.io/badge/NetChat-Real--time%20Messaging-blue)
+![HetChat Banner](https://img.shields.io/badge/NetChat-Real--time%20Messaging-blue)
 ![React](https://img.shields.io/badge/React-18.2-61dafb)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-green)
 ![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-orange)
