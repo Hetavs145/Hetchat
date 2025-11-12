@@ -2,7 +2,7 @@
 
 A modern, full-stack real-time chat application built with React, Node.js, Firebase, and Socket.io. Features beautiful UI with light/dark mode, real-time messaging, typing indicators, and user presence tracking.
 
-![HetChat Banner](https://img.shields.io/badge/NetChat-Real--time%20Messaging-blue)
+![HetChat Banner](https://img.shields.io/badge/HetChat-Real--time%20Messaging-blue)
 ![React](https://img.shields.io/badge/React-18.2-61dafb)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-green)
 ![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-orange)
@@ -114,25 +114,25 @@ npm install
 #### Client `.env` (or use the provided one)
 Create `client/.env`:
 ```env
-VITE_FIREBASE_API_KEY=AIzaSyDSBCIVqMTqU8o4xCsTyVaMbpsnevpzVlg
-VITE_FIREBASE_AUTH_DOMAIN=hetchat-bc3ea.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=hetchat-bc3ea
-VITE_FIREBASE_STORAGE_BUCKET=hetchat-bc3ea.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID=371455166331
-VITE_FIREBASE_APP_ID=1:371455166331:web:5da5e1d62954a679f55fde
-VITE_FIREBASE_MEASUREMENT_ID=G-V6C64K2MJF
-VITE_SOCKET_URL=http://localhost:5000
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+VITE_FIREBASE_MEASUREMENT_ID=
+VITE_SOCKET_URL=
 ```
 
 #### Server `.env`
 Create `server/.env`:
 ```env
-PORT=5000
+PORT=
 NODE_ENV=development
-FIREBASE_PROJECT_ID=hetchat-bc3ea
-FIREBASE_CLIENT_EMAIL=your-service-account-email@project-id.iam.gserviceaccount.com
-FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYour private key\n-----END PRIVATE KEY-----\n"
-CLIENT_URL=http://localhost:3000
+FIREBASE_PROJECT_ID=
+FIREBASE_CLIENT_EMAIL=
+FIREBASE_PRIVATE_KEY=
+CLIENT_URL=
 ```
 
 **Important**: Get the service account credentials from the JSON file you downloaded.
@@ -226,7 +226,7 @@ After deploying the server, update `client/.env`:
 VITE_SOCKET_URL=https://your-server-url.com
 ```
 
-Then rebuild and redeploy the client.
+Then rebuild and redeploy the client.-->
 
 ## 🔒 Security
 
@@ -307,14 +307,6 @@ Then rebuild and redeploy the client.
 - [TailwindCSS Documentation](https://tailwindcss.com/docs)
 - [Framer Motion Documentation](https://www.framer.com/motion/)
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🎉 Demo
 
 To test the app with 2 users:
@@ -335,4 +327,3 @@ You should see:
 - ✅ Light/dark mode toggle
 
 
- -->
